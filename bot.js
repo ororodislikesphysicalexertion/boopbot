@@ -15,9 +15,13 @@ client.on('message', message => {
 	const command = args.shift().toLowerCase();
 
 	if(command === "boop") {
-		var number = 82;
-		var imageNumber = Math.floor(Math.random() * number) + 1;
+		var totalImages = 82;
+		var imageNumber = Math.floor(Math.random() * totalImages) + 1;
 		message.channel.send({files: ["./images/" + imageNumber + ".jpg"]});
+	} else if(command === "pet") {
+		var totalGifs = 5;
+		var gifNumber = Math.floor(Math.random() * totalGifs) + 1;
+		message.channel.send({files: ["./gifs/" + gifNumber + ".gif"]});
 	}
 	
 });
