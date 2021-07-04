@@ -1,14 +1,23 @@
 {
   "name": "discord-bot",
   "version": "1.0.0",
-  "description": "",
   "main": "bot.js",
+  "engines": {
+    "node": "14.16.1",
+    "npm": "*"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node bot.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "discord.js": "^12.5.3"
-  }
+    "axios": "^0.21.1",
+    "discord.js": "^12.5.3",
+    "petfinder-client": "^1.0.2"
+  },
+  "devDependencies": {},
+  "keywords": [],
+  "description": ""
 }
